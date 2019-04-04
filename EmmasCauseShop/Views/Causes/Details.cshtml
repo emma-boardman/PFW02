@@ -1,0 +1,58 @@
+﻿@model EmmasCauseShop.Models.Cause
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cause</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauseCreator.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauseCreator.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauseTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauseTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CauseDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CauseDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CausePictureUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CausePictureUrl)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CauseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
